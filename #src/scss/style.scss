@@ -346,12 +346,12 @@ body {
         justify-content: space-between;
         background-color: #fff;
         border-radius: 10px;
-        padding: 25px;
+        padding: 25px 0;
     }
 
     .vertical__graph {
         width: 70%;
-
+        padding: 0 25px;
 
         .wrapper {
             width: 100%;
@@ -360,13 +360,8 @@ body {
             display: flex;
             justify-content: space-evenly;
 
-            margin-bottom: 20px;
-            // flex-direction: row;
-            // align-items: flex-end;
+            margin-bottom: 70px;
             &__item {
-                // width: 500px;
-                // height: 300px;
-                // border-bottom: 1px solid black;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -378,7 +373,7 @@ body {
                 position: relative;
                 .year {
                     position: absolute;
-                    bottom: -15%;  
+                    bottom: -25px;  
                 }
             }
 
@@ -478,6 +473,39 @@ body {
                 }
             }
         }
+
+        .graph__bottom {
+
+            .wrapper {
+                margin-bottom: 20px;
+            }
+            .p1 {
+                height: 25px;
+                &-second {
+                    height: 45px;
+                }
+                &-third {
+                    height: 100px;
+                }
+                &-fourth {
+                    height: 120px;
+                }
+
+            }
+            .p2 {
+                height: 45px;
+                &-second {
+                    height: 80px;
+                }
+                &-third {
+                    height: 130px;
+                }
+                &-fourth {
+                    height: 165px;
+                }
+            }
+
+        }
     }
 
     .graph__title {
@@ -491,7 +519,8 @@ body {
 
 
     .circle__graph {
-
+        padding: 0 25px;
+        border-left: 1px solid #f9f7f2;
     }
 
 }
