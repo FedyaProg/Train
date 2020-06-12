@@ -6,10 +6,18 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'MazzardH';
+	src: url('fonts/MazzardH-ExtraLight.eot');
+	src: local('☺'), url('../../fonts/MazzardH-ExtraLight.woff') format('woff'), url('fonts/MazzardH-ExtraLight.ttf') format('truetype'), url('fonts/MazzardH-ExtraLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
     background-color: #f9f7f2;
 	font-family: 'Conv';
     font-weight: 400;
+
 }
 
 .container {
@@ -177,11 +185,11 @@ body {
     }
 
     &__tabs {
-        position: absolute;
+        // position: absolute;
         left: 0;
         top: -50px;
         background-color: #fff;
-        padding: 30px;
+        padding: 15px 30px;
         width: 100%;
 
         display: flex;
@@ -215,14 +223,279 @@ body {
         margin-left: 25px;
     }
 
-    &__content {
+    
+
+	&__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #feeebd;
+
+        // position: absolute;
+        margin: 30px 0 30px 0;
+
+		&_main {
+		}
+
+		&_news {
+		}
+	}
+    
+}
+
+
+// Annual Report ==================================
+
+.report {
+    background-image: url("../../img/report.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+    min-height: 470px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -140px;
+            z-index: 3;
+            background-image: url('../../img/report/1.png');
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -110%;
+            left: 5%;
+            z-index: 3;
+            background-image: url('../../img/report/2.png');
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        &_title {
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 1.29;
+            color: #403f3d;
+
+            margin: 100px 0;
+            padding-right: 50%;
+        }
+
+        &_number {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 40%;
+        }
+
+        > .drop {
+            object-fit: contain;
+            position: absolute;
+            bottom: -35%;
+            right: 0;
+        }
     }
 
+    .number {
+        display: flex;
+        flex-direction: column;
+        &__big {
+            font-size: 70px;
+            font-weight: 200;
+            line-height: 0.63;
+            color: #403f3d;
+            font-family: 'MazzardH';
+
+            margin-bottom: 15px;
+        }
+        &__text {
+            opacity: 0.3;
+            font-family: DINPro;
+            font-size: 20px;
+            color: #403f3d;
+
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #403f3d;
+            font-weight: 500;
+
+        }
+    }
 
 }
 
 
+// Progress Bar =====================================
 
+.progresbar {
+    margin-bottom: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .vertical__graph {
+        width: 70%;
+
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #979797;
+            display: flex;
+            justify-content: space-evenly;
+
+            margin-bottom: 20px;
+            // flex-direction: row;
+            // align-items: flex-end;
+            &__item {
+                // width: 500px;
+                // height: 300px;
+                // border-bottom: 1px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+                font-size: 12px;
+                font-weight: 700;
+	            font-family: 'MazzardH';
+
+                position: relative;
+                .year {
+                    position: absolute;
+                    bottom: -15%;  
+                }
+            }
+
+            
+        }
+          
+          .number1, 
+          .number2 {
+            text-align: center;
+            width: 35px;
+            margin: 0 5px;
+
+          }
+          
+          .p1 {
+            display: block;
+            height: 60px;
+            background: #ffe44b;
+
+            margin-top: 5px;
+            &-second {
+                height: 55px;
+            }
+            &-third {
+                height: 50px;
+            }
+            &-fourth {
+                height: 45px;
+            }
+          }
+          .p2 {
+            display: block;
+            height: 140px;
+            background: #7abf6a;
+
+            margin-top: 5px;
+            &-second {
+                height: 135px;
+            }
+            &-third {
+                height: 130px;
+            }
+            &-fourth {
+                height: 125px;
+            }   
+          }
+        // ==============================
+
+        .graph__top_title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .top__title {
+                font-size: 16px;
+                font-weight: 700;
+                color: #7abf6a;
+            }
+
+            .top__title_yellow {
+                font-size: 12px;
+                padding-top: 3px;
+                color: #403f3d;
+
+                position: relative;
+                &:before {
+                    content: '';
+                    left: -15px;
+                    top: 50%;
+
+                    transform: translateY(-50%);
+                    background-color: #ffe44b;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                }
+            }
+
+            .top__title_green {
+                font-size: 12px;
+                padding-top: 3px;
+
+                color: #403f3d;
+                position: relative;
+                &:before {
+                    content: '';
+                    left: -15px;
+                    top: 50%;
+
+                    transform: translateY(-50%);
+                    background-color: #7abf6a;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .graph__title {
+        color: #403f3d;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+
+
+    .circle__graph {
+
+    }
+
+}
+    
 
 
 

@@ -27,6 +27,14 @@ p {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MazzardH';
+  src: url("fonts/MazzardH-ExtraLight.eot");
+  src: local("☺"), url("../../fonts/MazzardH-ExtraLight.woff") format("woff"), url("fonts/MazzardH-ExtraLight.ttf") format("truetype"), url("fonts/MazzardH-ExtraLight.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #f9f7f2;
   font-family: 'Conv';
@@ -206,11 +214,10 @@ body {
 }
 
 .about__tabs {
-  position: absolute;
   left: 0;
   top: -50px;
   background-color: #fff;
-  padding: 30px;
+  padding: 15px 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,4 +251,287 @@ body {
   color: #403f3d;
   font-weight: 700;
   margin-left: 25px;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #feeebd;
+  margin: 30px 0 30px 0;
+}
+
+.report {
+  background-image: url("../../img/report.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  min-height: 470px;
+}
+
+.report__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.report__inner:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  z-index: 3;
+  background-image: url("../../img/report/1.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.report__inner:after {
+  content: '';
+  position: absolute;
+  bottom: -110%;
+  left: 5%;
+  z-index: 3;
+  background-image: url("../../img/report/2.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.report__inner_title {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.29;
+  color: #403f3d;
+  margin: 100px 0;
+  padding-right: 50%;
+}
+
+.report__inner_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 40%;
+}
+
+.report__inner > .drop {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: -35%;
+  right: 0;
+}
+
+.report .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.report .number__big {
+  font-size: 70px;
+  font-weight: 200;
+  line-height: 0.63;
+  color: #403f3d;
+  font-family: 'MazzardH';
+  margin-bottom: 15px;
+}
+
+.report .number__text {
+  opacity: 0.3;
+  font-family: DINPro;
+  font-size: 20px;
+  color: #403f3d;
+}
+
+.report .number__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #403f3d;
+  font-weight: 500;
+}
+
+.progresbar {
+  margin-bottom: 50px;
+}
+
+.progresbar__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.progresbar .vertical__graph {
+  width: 70%;
+}
+
+.progresbar .vertical__graph .wrapper {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #979797;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.progresbar .vertical__graph .wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'MazzardH';
+  position: relative;
+}
+
+.progresbar .vertical__graph .wrapper__item .year {
+  position: absolute;
+  bottom: -15%;
+}
+
+.progresbar .vertical__graph .number1,
+.progresbar .vertical__graph .number2 {
+  text-align: center;
+  width: 35px;
+  margin: 0 5px;
+}
+
+.progresbar .vertical__graph .p1 {
+  display: block;
+  height: 60px;
+  background: #ffe44b;
+  margin-top: 5px;
+}
+
+.progresbar .vertical__graph .p1-second {
+  height: 55px;
+}
+
+.progresbar .vertical__graph .p1-third {
+  height: 50px;
+}
+
+.progresbar .vertical__graph .p1-fourth {
+  height: 45px;
+}
+
+.progresbar .vertical__graph .p2 {
+  display: block;
+  height: 140px;
+  background: #7abf6a;
+  margin-top: 5px;
+}
+
+.progresbar .vertical__graph .p2-second {
+  height: 135px;
+}
+
+.progresbar .vertical__graph .p2-third {
+  height: 130px;
+}
+
+.progresbar .vertical__graph .p2-fourth {
+  height: 125px;
+}
+
+.progresbar .vertical__graph .graph__top_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.progresbar .vertical__graph .graph__top_title .top__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7abf6a;
+}
+
+.progresbar .vertical__graph .graph__top_title .top__title_yellow {
+  font-size: 12px;
+  padding-top: 3px;
+  color: #403f3d;
+  position: relative;
+}
+
+.progresbar .vertical__graph .graph__top_title .top__title_yellow:before {
+  content: '';
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #ffe44b;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progresbar .vertical__graph .graph__top_title .top__title_green {
+  font-size: 12px;
+  padding-top: 3px;
+  color: #403f3d;
+  position: relative;
+}
+
+.progresbar .vertical__graph .graph__top_title .top__title_green:before {
+  content: '';
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #7abf6a;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progresbar .graph__title {
+  color: #403f3d;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
