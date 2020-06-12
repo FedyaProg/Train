@@ -19,6 +19,10 @@ p {
   margin-top: 0;
 }
 
+input {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Conv';
   src: url("fonts/15767.eot");
@@ -369,6 +373,31 @@ body {
   font-weight: 500;
 }
 
+.main {
+  margin-bottom: 30px;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__left {
+  background-color: #fff;
+  width: 66.66666%;
+  margin-right: 15px;
+}
+
+.main__right {
+  background-color: #fff;
+  width: 33.33333%;
+  margin-left: 15px;
+}
+
 .progresbar {
   margin-bottom: 50px;
 }
@@ -386,7 +415,7 @@ body {
 }
 
 .progresbar .vertical__graph {
-  width: 70%;
+  width: 60%;
   padding: 0 25px;
 }
 
@@ -576,4 +605,179 @@ body {
 .progresbar .circle__graph {
   padding: 0 25px;
   border-left: 1px solid #f9f7f2;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.progresbar .circle__graph .circle__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7abf6a;
+  margin-bottom: 40px;
+}
+
+.progresbar .circle__graph .circle__img {
+  max-width: 350px;
+  width: 100%;
+}
+
+.progresbar .circle__graph .paragraph {
+  font-size: 12px;
+  color: #403f3d;
+  font-weight: 500;
+  padding-left: 20px;
+  position: relative;
+}
+
+.progresbar .circle__graph .paragraph:before {
+  content: '';
+  left: 0;
+  top: 5px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.triple {
+  margin-bottom: 50px;
+}
+
+.triple__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.triple__item {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 33.33333%;
+  margin: 0 15px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.triple__item_calendar {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.triple__item_title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: #403f3d;
+  margin-bottom: 15px;
+}
+
+.triple__item_text {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #403f3d;
+  margin-bottom: 30px;
+}
+
+.triple .triple__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.triple .triple__item_input {
+  padding: 10px 10px 10px 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #403f3d15;
+  font-size: 18px;
+  font-weight: 700;
+  color: #403f3d70;
+}
+
+.triple ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #403f3d70;
+  opacity: 1;
+  /* Firefox */
+}
+
+.triple :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #403f3d70;
+  opacity: 1;
+  /* Firefox */
+}
+
+.triple ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #403f3d70;
+  opacity: 1;
+  /* Firefox */
+}
+
+.triple ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #403f3d70;
+  opacity: 1;
+  /* Firefox */
+}
+
+.triple :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #403f3d70;
+}
+
+.triple ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #403f3d70;
+}
+
+.triple .triple__item_btn {
+  width: 220px;
+  height: 50px;
+  background-color: #ffd903;
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  text-align: center;
+  color: #403f3d;
+  font-weight: 700;
+  border: none;
+}
+
+.triple .radio__input_block {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ffd903;
+}
+
+.triple .triple__check {
+  margin-right: 15px;
 }

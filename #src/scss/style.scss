@@ -181,9 +181,7 @@ body {
 
     &__inner {
         position: relative;
-
     }
-
     &__tabs {
         // position: absolute;
         left: 0;
@@ -197,7 +195,6 @@ body {
         box-shadow: 0 2px 16px 0 rgba(138, 108, 33, 0.06);
         border-radius: 10px;
     }
-
     .tabs__item {
         padding: 15px 30px;
 
@@ -207,12 +204,9 @@ body {
 
         &:last-child {
         border-right: none;
-
         }
     }
 
-
-    
     .tabs__link {
         text-decoration: none;
         font-size: 14px;
@@ -222,9 +216,6 @@ body {
 
         margin-left: 25px;
     }
-
-    
-
 	&__content {
         display: flex;
         justify-content: space-between;
@@ -335,6 +326,27 @@ body {
 
 }
 
+// Main =============================================
+
+.main {
+    margin-bottom: 30px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        background-color: #fff;
+        width: 66.66666%;
+        margin-right: 15px;
+    }
+    &__right {
+        background-color: #fff;
+        width: 33.33333%;
+        margin-left: 15px;
+    }
+}
+
 
 // Progress Bar =====================================
 
@@ -350,7 +362,7 @@ body {
     }
 
     .vertical__graph {
-        width: 70%;
+        width: 60%;
         padding: 0 25px;
 
         .wrapper {
@@ -521,10 +533,131 @@ body {
     .circle__graph {
         padding: 0 25px;
         border-left: 1px solid #f9f7f2;
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .circle__title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #7abf6a;
+
+            margin-bottom: 40px;
+        }
+        .circle__img {
+            max-width: 350px;
+            width: 100%;
+        }
+        .paragraph {
+            font-size: 12px;
+            color: #403f3d;
+            font-weight: 500;
+            padding-left: 20px;
+
+            position: relative;
+            &:before {
+                content: '';
+                left: 0;
+                top: 5px;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #000;
+            }
+        }
     }
 
 }
     
+// Triple ===============================================
+
+.triple {
+    margin-bottom: 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+    }
+
+    &__item {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 33.33333%;
+        margin: 0 15px;
+        padding: 25px;
+
+        display: flex;
+        flex-direction: column;
+        &_calendar {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__item_title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.29;
+        color: #403f3d;
+        margin-bottom: 15px;
+    }
+    &__item_text {
+        font-size: 16px;
+        line-height: 1.25;
+        color: #403f3d;
+        margin-bottom: 30px;
+    }
+    .triple__form {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-around;
+    }
+    .triple__item_input {
+        padding: 10px 10px 10px 5px;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #403f3d15;
+
+        font-size: 18px;
+        font-weight: 700;
+        color: #403f3d70;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #403f3d70;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #403f3d70;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #403f3d70;
+      }
+    .triple__item_btn {
+        width: 220px;
+        height: 50px;
+        background-color: #ffd903;
+        font-size: 14px;
+        letter-spacing: 0.44px;
+        text-align: center;
+        color: #403f3d;
+        font-weight: 700;
+        border: none;
+    }
+    .radio__input_block {
+        padding: 10px 0;
+        border-bottom: 1px dashed #ffd903;
+    }
+    .triple__check {
+        margin-right: 15px;
+    }
+
+}
 
 
 
