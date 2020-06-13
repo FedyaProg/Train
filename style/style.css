@@ -1132,3 +1132,217 @@ body {
 .triple .triple__check {
   margin-right: 15px;
 }
+
+.map {
+  margin-bottom: 50px;
+}
+
+.map__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map__img {
+  margin-right: 15px;
+  width: 66.66666%;
+}
+
+.map__img_photo {
+  width: 100%;
+  padding: 0 0 25px 25px;
+}
+
+.map__info {
+  margin-left: 15px;
+  width: 32%;
+  border-radius: 10px;
+}
+
+.map__info .map__select_city {
+  width: 100%;
+  padding: 25px;
+  background-color: #f0efe9;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.map__info .map__select_city .select__city {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 5px 15px 15px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #403f3d;
+  margin-bottom: 80px;
+}
+
+.map__info .map__select_city .city__option {
+  background-color: #bfb8a9;
+}
+
+.map__info .map__info_city {
+  width: 100%;
+  padding: 140px 25px 25px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.map__info .map__info_city .map__info_title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #403f3d;
+}
+
+.map__info .map__info_city .map__info_subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #403f3d;
+}
+
+.map__info .map__info_city .map__info_text {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #403f3d;
+}
+
+.map__info .map__info_city .link {
+  color: #e9bd38;
+  text-decoration: none;
+}
+
+.slider {
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+
+.footer__content {
+  border-bottom: 1px solid #403f3d15;
+  padding: 40px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__content .footer__content__left {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__content .footer__content__left .left__row_text {
+  font-size: 15px;
+  color: #403f3d;
+  margin-bottom: 25px;
+}
+
+.footer__content .footer__content__left .footer-tel {
+  font-family: 'MazzardH';
+  font-size: 20px;
+  font-weight: 600;
+  color: #403f3d;
+  margin-bottom: 15px;
+}
+
+.footer__content .footer__content__right {
+  width: 50%;
+  margin-left: 30px;
+  background-color: #f9f7f2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.footer__content .footer__content__right .right__row {
+  width: 50%;
+  padding: 15px 0;
+  position: relative;
+}
+
+.footer__content .footer__content__right .right__row.right .footer__row_mini {
+  border: none;
+}
+
+.footer__content .footer__content__right .right__row_icon {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer__content .footer__content__right .right__row_header {
+  color: #403f3d;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 0 40px 0 80px;
+}
+
+.footer__content .footer__content__right .footer__row_mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px 0 80px;
+  border-right: 1px solid #403f3d15;
+}
+
+.footer__content .footer__content__right .footer__row_mini > p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #403f3d;
+  margin: 0;
+}
+
+.footer__content .footer__content__right .footer__row_mini > span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #403f3d;
+}
+
+.footer__copywrite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #403f3d;
+}
+
+.footer__copywrite a {
+  text-decoration: none;
+  color: #e9bd38;
+  font-weight: 500;
+}
