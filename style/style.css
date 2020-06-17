@@ -81,6 +81,19 @@ body {
   }
 }
 
+@media (max-width: 710px) {
+  .container {
+    width: 100%;
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +198,12 @@ body {
   }
   .options .options__left {
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .options {
+    display: none;
   }
 }
 
@@ -337,6 +356,12 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .header {
+    margin-bottom: 15px;
+  }
+}
+
 .intro {
   margin-bottom: 100px;
 }
@@ -356,6 +381,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 575px) {
+  .intro {
+    margin-bottom: 65px;
+  }
 }
 
 .about {
@@ -625,6 +656,29 @@ body {
   }
 }
 
+@media (max-width: 710px) {
+  .about .about__news {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .about__news_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about .about__news_item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .about .tabs__link {
+    font-size: 12px;
+  }
+  .about .content__main_title {
+    padding-right: 40%;
+  }
+}
+
 .report {
   background-image: url("../../img/report.jpg");
   background-position: center;
@@ -747,6 +801,15 @@ body {
   }
   .report .report__inner_number {
     padding-right: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .report {
+    margin-bottom: 30px;
+  }
+  .report .report__inner_title {
+    font-size: 32px;
   }
 }
 
@@ -1005,6 +1068,25 @@ body {
   }
   .main .main__right .content__data {
     width: 50%;
+  }
+  .main .main__left {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 575px) {
+  .main .main__left {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .row1__img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .main .main__left_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1424,6 +1506,18 @@ body {
   }
   .triple .triple__item:first-child {
     display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .triple .triple__item_title {
+    font-size: 12px;
+  }
+  .triple .triple__item_text {
+    font-size: 14px;
+  }
+  .triple .radio__input_block label {
+    font-size: 12px;
   }
 }
 

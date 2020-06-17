@@ -51,6 +51,20 @@ body {
     }
 }
 
+@media (max-width: 710px) {
+    .container {
+        width: 100%;
+        max-width: 530px;
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
+}
+
+// Options=======================================================================
+
 .options {
     display: flex;
     justify-content: space-between;
@@ -121,6 +135,9 @@ body {
         .options__left {
             margin-bottom: 5px;
         }
+    }
+    @media (max-width: 575px) {
+        display: none;
     }
 }
 
@@ -244,12 +261,9 @@ body {
             }
 
         }
-        // @media (max-width: 1020px) {
-        //     .nav {
-        //         display: none;
-        //     }
-        // }
-
+        @media (max-width: 575px) {
+            margin-bottom: 15px;
+        }
 
 }
 
@@ -270,7 +284,11 @@ body {
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
-		}
+        }
+
+    @media (max-width: 575px) {
+        margin-bottom: 65px;
+    }
 }
 
 
@@ -496,6 +514,27 @@ body {
             margin-bottom: 30px;
         }
     }
+    @media (max-width: 710px) {
+        .about__news {
+            flex-wrap: wrap;
+        }
+        .about__news_item {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .tabs__link {
+            font-size: 12px;
+        }
+        .content__main_title {
+            padding-right: 40%;
+        }
+    }
+
 }
 
 
@@ -604,6 +643,12 @@ body {
         }
         .report__inner_number {
             padding-right: 20%;
+        }
+    }
+    @media (max-width: 575px) {
+        margin-bottom: 30px;
+        .report__inner_title {
+            font-size: 32px;
         }
     }
 }
@@ -818,6 +863,22 @@ body {
                 width: 50%;
             }
         }
+        .main__left {
+            flex-wrap: nowrap;
+        }
+    }
+    @media (max-width: 575px) {
+        .main__left {
+            flex-wrap: nowrap;
+        }
+        .row1__img {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .main__left_row {
+            flex-wrap: wrap;
+        }
+
     }
 }
 
@@ -1154,6 +1215,19 @@ body {
                 display: none;
             }       
         }
+    }
+    @media (max-width: 575px) {
+        .triple__item_title {
+            font-size: 12px;
+        }
+        .triple__item_text {
+            font-size: 14px;
+        }
+        .radio__input_block label {
+
+            font-size: 12px;
+        }
+
     }
 }
 
